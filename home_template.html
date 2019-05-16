@@ -1,283 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Head etiketi,bir HTML sayfasının içerisinde yer alması gereken ancak bunları sayfa üzerine yazdırmamak ve ziyaretçilere göstermemek için kullanılan gizleme etiketidir -->
 <head>
-	<title> Home Template </title>
 	<meta charset="utf-8">
+        <!-- Baslı kısmı tanımlı ise title yazdırsın değilse Home Template yazdırsın. -->
+        <title>{{ title is defined ? title : 'Home Template' }}</title>
 	<link rel="stylesheet" type="text/css" href="css.css">	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+<!-- bir HTML belgesindeki içerikler; bağlantılar, resimler, tablolar vd. bu etiket içerisinde bulunur. -->
 <!-- 
 	Tạo đường màu
-
-	<div class="jumbotron text-center">
-	</div>
+	<div class="jumbotron text-center"></div>
  -->
-
 	<div class="container" style="margin-top: 45px">
 		<!-- ======================= -->
 		<div class="row">
-			<div class="col-sm-3">
-				<img src="igms/logo.png">
-			</div>
-			<div class="col-sm-6">
-				<p> Powered by Jeffrey Way Industries </p>
-			</div>
-			<div class="col-sm-1">
-				<a href="#"> About </a>
-			</div>
-			<div class="col-sm-1">
-				<a href="#"> Portfolio </a>
-			</div>
-			<div class="col-sm-1">
-				<a href="#"> Contact </a>
-			</div>
+			<div class="col-sm-3"><img src="igms/logo.png"> </div>
+			<div class="col-sm-6"><p> Powered by Jeffrey Way Industries </p></div>
+			<div class="col-sm-1"><a href="#"> About </a></div>
+			<div class="col-sm-1"><a href="#"> Portfolio </a></div>
+			<div class="col-sm-1><a href="#"> Contract </a> </div>
 		</div>
-
 		<br>
+               <!-- hr etiketi ,ekrana yatay çizgi çekmek için kullanılır.-->
 		<hr>
+               <!-- br etiketi,bosluk bırakma etiketidir.-->
 		<br>
-
 		<!-- ======================= -->
-
 		<div class="row">
-			<div class="col-sm-7">
-				<h5> Take a look at our work to see what we mean copy </h5>
+			<div class="col-sm-7"><h5> Take a look at our work to see what we mean copy </h5></div>
+			<div class="col-sm-1">
+				<a href="https://www.facebook.com/"><img src="igms/facebook.png" class="img-circle"></a>
 			</div>
 			<div class="col-sm-1">
-				<a href="https://www.facebook.com/">
-					<img src="igms/facebook.png" class="img-circle">
-				</a>
+				<a href="https://twitter.com/Vimeo?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="igms/vimeo.png" class="img-circle"></a>
 			</div>
 			<div class="col-sm-1">
-				<a href="https://twitter.com/Vimeo?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-					<img src="igms/vimeo.png" class="img-circle">
-				</a>
+				<a href="https://twitter.com/lastfm?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="igms/lastfm.png" class="img-circle"> </a>
 			</div>
 			<div class="col-sm-1">
-				<a href="https://twitter.com/lastfm?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-					<img src="igms/lastfm.png" class="img-circle">
-				</a>
+				<a href="https://www.linkedin.com/feed/"><img src="igms/linkedin.png" class="img-circle"> </a>
 			</div>
 			<div class="col-sm-1">
-				<a href="https://www.linkedin.com/feed/">
-					<img src="igms/linkedin.png" class="img-circle">
-				</a>
-			</div>
-			<div class="col-sm-1">
-				<a href="https://twitter.com/dribbble?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-					<img src="igms/dribbble.png" class="img-circle">
-				</a>
+				<a href="https://twitter.com/dribbble?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="igms/dribbble.png" class="img-circle"></a>
 			</div>
 		</div>
-
-
 		<br>
+<!-- hr etiketi , ekrana yatay çizgi çekmek için kullanılır.-->
 		<hr>
+<!-- br etiketi,bosluk bırakma etiketidir.-->
 		<br>
-
 		<!-- ======================= -->
-
-
-		<div class="jumbotron text-center" class="row">
-			<img src="igms/mumbo.png" id="mumbo">
+		<div class="jumbotron text-center" class="row"> <img src="igms/mumbo.png" id="mumbo">
 		</div>
-
 		<br>
+<!-- hr etiketi , ekrana yatay çizgi çekmek için kullanılır.-->
 		<hr>
+<!-- br etiketi,bosluk bırakma etiketidir.-->
 		<br>
-
 		<!-- ======================= -->
-
-
 		<div class="row">
 			<div class="col-sm-8">
 				<h4> Risus portacon vestibulum posuere </h4>
 				<p> Mirko Englich (born 28 August 1978) is a German Greco-Roman wrestler. He won two silver medals at the European Wrestling Championships in 2003 and 2008. Englich won a silver medal at the 2008 Summer Olympics. He defeated U.S.A's Adam Wheeler in the semi-finals to face Russia's Aslanbek Khushtov.</p>
 			</div>
-
 			<div class="col-sm-4">
 				<ul style="list-style-type: circle;">
-					<li>
-						<a href="#"> Cray sustainable vegan</a>
-					</li>
-
-					<li>
-						<a href="#"> Chambray occaecat jean shorts</a>
-					</li>
-
-					<li>
-						<a href="#"> Hella selvage</a>
-					</li>
-
-					<li>
-						<a href="#"> Over master cleanse</a>
-					</li>
+					<li> <a href="#"> Cray sustainable vegan</a></li>
+					<li><a href="#"> Chambray occaecat jean shorts</a></li>
+					<li><a href="#"> Hella selvage</a></li>
+					<li><a href="#">Over master cleanse</a> </li>
 				</ul>
 			</div>
 		</div>
-
+<!-- hr etiketi , ekrana yatay çizgi çekmek için kullanılır.-->
 		<br>
+<!-- br etiketi,bosluk bırakma etiketidir.-->
 		<hr>
 		<br>
-
 		<!-- ======================= -->
-
-		<div class="row">
-			<h4>Take a look at our work to see what we mean</h4>
-		</div>
-
+		<div class="row"> <h4>Take a look at our work to see what we mean</h4> </div>
 		<br>
 		<br>
-
 		<!-- ======================= -->
-
-
 		<div class="row" align="center">
-			<div class="col-sm-4">
-					
+			<div class="col-sm-4">					
 				<img src="igms/thumbdog.png" class="img-thumbnail">
-			
-			
 				<h5>Purus Egestas Fusce</h5>
-			
-			
-				<p>Cras justo odio, dapibus ac facilisis egestas eget quam</p>
-			
-				
+				<p>Cras justo odio, dapibus ac facilisis egestas eget quam</p>				
 			</div>
-
 			<div class="col-sm-4">
-
 				<img src="igms/thumbufo.png" class="img-thumbnail">
-			
-			
 				<h5>Purus Egestas Fusce</h5>
-			
-			
-				<p>Cras justo odio, dapibus ac facilisis egestas eget quam</p>
-					
+				<p>Cras justo odio, dapibus ac facilisis egestas eget quam</p>					
 			</div>
-
-			<div class="col-sm-4">
-					
+			<div class="col-sm-4">		
 				<img src="igms/thumbwitch.png" class="img-thumbnail">
-			
-			
 				<h5>Purus Egestas Fusce</h5>
-			
-				<p>Cras justo odio, dapibus ac facilisis egestas eget quam</p>
-					
+				<p>Cras justo odio, dapibus ac facilisis egestas eget quam</p>					
 			</div>
 		</div>
-
 		<!-- ======================= -->
-
 		<div class="row" align="center">
-			<div class="col-sm-4">
-				
-				
+			<div class="col-sm-4">				
 				<img src="igms/thumbshoe.png" class="img-thumbnail">
-			
 				<h5>Purus Egestas Fusce</h5>
-			
 				<p>Cras justo odio, dapibus ac facilisis egestas eget quam</p>
-			
 			</div>
-
-			<div class="col-sm-4">
-					
+			<div class="col-sm-4">		
 				<img src="igms/thumbfoot.png" class="img-thumbnail">
-			
 				<h5>Purus Egestas Fusce</h5>
-			
-				<p>Cras justo odio, dapibus ac facilisis egestas eget quam</p>
-					
+				<p>Cras justo odio, dapibus ac facilisis egestas eget quam</p>					
 			</div>
-
-			<div class="col-sm-4">
-					
+			<div class="col-sm-4">		
 				<img src="igms/thumbradio.png" class="img-thumbnail">
-			
 				<h5>Purus Egestas Fusce</h5>
-			
 				<p>Cras justo odio, dapibus ac facilisis egestas eget quam</p>
-			
 			</div>
 		</div>
-
+<!-- hr etiketi, ekrana yatay  çizgi çekmek için kullanılır..-->
 		<br>
+<!-- br etiketi,bosluk bırakma etiketidir.-->
 		<hr>
 		<br>
-
 		<!-- ======================= -->
-
 		<div class="row">
 			<div class="col-sm-8">
 				<h4> Risus portacon vestibulum posuere </h4>
 				<p> Mirko Englich (born 28 August 1978) is a German Greco-Roman wrestler. He won two silver medals at the European Wrestling Championships in 2003 and 2008. Englich won a silver medal at the 2008 Summer Olympics. He defeated U.S.A's Adam Wheeler in the semi-finals to face Russia's Aslanbek Khushtov.</p>
 			</div>
-
 			<div class="col-sm-4">
 				<ul style="list-style-type: circle;">
-					<li>
-						<a href="#"> Cray sustainable vegan</a>
-					</li>
-
-					<li>
-						<a href="#"> Chambray occaecat jean shorts</a>
-					</li>
-
-					<li>
-						<a href="#"> Hella selvage</a>
-					</li>
-
-					<li>
-						<a href="#"> Over master cleanse</a>
-					</li>
+					<li><a href="#"> Cray sustainable vegan</a></li>
+					<li> <a href="#"> Chambray occaecat jean shorts</a></li>
+					<li> <a href="#"> Hella selvage</a> </li>
+					<li> <a href="#"> Over master cleanse</a> </li>
 				</ul>
 			</div>
 		</div>
-
+<!-- br etiketi,bosluk bırakma etiketidir.-->
 		<br>
 		<br>
 		<br>
+<!-- hr etiketi, ekrana yatay  çizgi çekmek için kullanılır..-->
 		<hr>
 		<br>
-		
-
 		<!-- ======================= -->
-
-
 		<div class="row">
-
-			<div class="col-sm-6">
-				<p>© 2012 All Rights Reserved. Powered by Jeffrey Way Industries</p>
-			</div>
-
-			<div class="col-sm-2">
-				<a href="#"> About </a>
-			</div>
-			<div class="col-sm-2">
-				<a href="#"> Portfolio </a>
-			</div>
-			<div class="col-sm-2">
-				<a href="#"> Contact </a>
-			</div>
-			
+			<div class="col-sm-6"><p>© 2012 All Rights Reserved. Powered by Jeffrey Way Industries</p></div>
+			<div class="col-sm-2"><a href="#"> About</a></div>
+			<div class="col-sm-2"><a href="#"> Portfolio</a></div>
+			<div class="col-sm-2"><a href="#"> Contract</a></div>
+			</div>			
 		</div>
-
-
-
-
 	</div>
-
-
-
 </body>
 </html>
